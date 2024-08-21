@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" autocomplete="on" >
+    <!-- 자동완성기능 -->
+        <input type="text" name="id" placeholder="아이디를 입력해주세요" 
+        autofocus required pattern="[a-zA-Z].+[0-9]">
+        <!-- autofocus는 처음 웹사이트 커서 위치 -->
+        <!-- required는 필수로 입력해야하는 텍스트 -->
+        <!-- pattern는 정규표현식 
+            . == 아무 문자나 상관이 없다. 특수문자도 허용
+            + == 문자를 하나 이상 작성해야한다.
+            [0-9] 로 끝나면 마지막은 무조건 숫자
+        -->
+        <input type="password" name="password"
+        autocomplete="off" placeholder="비밀번호를 입력해주세요.">
+        <input type="submit">
+    </form>
+</body>
+</html>
