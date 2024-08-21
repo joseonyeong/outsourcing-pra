@@ -1,0 +1,14 @@
+검색 엔진을 통해(?) 로봇들이 웹페이지를 분석 후 결과를 내는 것
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://opentutorials.org/1.html</loc>
+        <!-- 웹페이지 내에 있는 웹페이지들 주소 -->
+    </url>
+    <url>
+        <loc>http://opentutorials.org/2.html</loc>
+        <!-- 웹페이지 내에 있는 웹페이지들 주소 -->
+    </url>
+</urlset>
