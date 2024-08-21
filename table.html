@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+    <thead>
+        <tr>
+            <th>이름</th>    <th>이름</th>
+            <!-- th가 좀 더 진하게 표시됨 -->
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>이름</td>    <td>이름</td>
+            <td>이름</td>    <td>이름</td>
+            <td>이름</td>    <td>이름</td>
+        </tr>
+    </tbody>
+    
+    <tfoot>
+        <tr>
+            <td>종합</td>
+        </tr>
+    </tfoot>    
+    <!-- tfoot은 무조건 아래 -->
+    </table>
+
+    <h2>병합</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>이름</th>    
+                <th>이름</th>
+                <th>이름</th>    
+                <th>이름</th>
+                <th>이름</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr>
+                <td>이름</td>    <td>이름</td>
+                <td>이름</td>    <td  rowspan="2"></td> <td></td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td colspan="3">종합</td> <td></td> <td></td>
+            </tr>
+        </tfoot>    
+        <!-- tfoot은 무조건 아래 -->
+        </table>
+</body>
+</html>
