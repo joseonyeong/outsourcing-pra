@@ -1,0 +1,2 @@
+# outsourcing-pra
+outsourcing practive
