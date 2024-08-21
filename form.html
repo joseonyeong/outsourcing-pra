@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost/login.php">
+    <!-- 로그인(사용자) 정보를 어디로 보낼 것인가는 action에 넣으면 됨. -->
+        <p>
+            아이디: <input type="text">
+            비밀번호: <input type="password">
+        </p>
+        
+        <br><br><br><br>
+
+        <p>아이디: <input type="text" name="id" value=""></p>
+        <p>비밀번호: <input type="password" name="pwd" value=""></p>
+        <p>주소: <input type="text" name="address" value=""></p>
+        <!-- name을 통해 정보를 보낼 때 무엇을 보냈는 지 알수있음(저이름으로 정보가 보내짐) -->
+        <!-- value는 기본 값 (미입력시) -->
+        <p>textarea: <textarea name="" id="" cols="50" rows="2"></textarea></p>
+        <!-- textarea는 여러줄 입력 -->
+
+        <input type="submit">
+
+        <h2> select button </h2>
+        <select name="color">
+            <option value="red">red</option>
+            <option value="blue">blu</option>
+            <option value="green">green</option>
+
+            <input type="submit">
+        </select>
+
+        <select name="color2" multiple>
+            <option value="red">red</option>
+            <option value="blue">blu</option>
+            <option value="green">green</option>
+
+            <input type="submit">
+        </select>
+        <!-- ctrl을 눌러야지 다중선택이 되기 때문에 checkbox 태그가 더 좋음 -->
+
+        <h2>radio button</h2>
+        red: <input type="radio" name="color" value="red">
+        blu: <input type="radio" name="color" value="blue">
+        green: <input type="radio" name="color" value="green">
+
+        <h2>checkbox</h2>
+        red: <input type="checkbox" name="color" value="red">
+        blu: <input type="checkbox" name="color" value="blue" checked>
+        green: <input type="checkbox" name="color" value="green">
+        <!-- checked를 넣으면 기본적으로 표시되었으면하는 것을 표시해줌 -->
+
+        <h2>button</h2>
+        <input type="submit" value="전송">
+        <input type="button" name="" id="" value="버튼" onclick="alert('경고')">
+        <input type="reset" name="" id="">
+
+        <h2>form hidden</h2>
+        <input type="text" name="id">
+        <input type="hideen" name="hide" value="히든">
+        <!-- 사용자 눈에는 보이지 않지만 action url로 정보는 전송됨. -->
+        <input type="submit">
+
+        <h2>label</h2>
+        <p>label은 개꿀이다</p>
+        <p><label for="id_txt">아이디: </label>
+            <input id="id_txt" type="text" name="id" value=""></p>
+        <p><label for="password">비밀번호: </label>
+            <input id="password" name="pwd" value=""></p>
+        <p><label for="address_txt">주소: </label>
+            <input id="address_txt" name="address" value=""></p>
+        <!-- label은 정보를 더 정확하게 만들어줌 -->
+        <!-- label for과 input id를 맞추면 아이디 글자만 눌러도 커서가 입력 상자로 이동됨 -->
+        
+        <h2>위 상자와 동일한 결과값</h2>
+        <label for="">아이디:
+            <input type="text" name="id" value="">
+        </label>
+        <!-- 위 상자와 동일한 결과값 -->
+        
+        <h2>서버 전달 form</h2>
+        <p>아이디: <input type="text" name="id" value=""></p>
+        <p>비밀번호: <input type="password" name="pwd" value="" method="post"></p>
+        <!-- post가 url에 미표시
+        get은 url에 표시
+        <form action method>로 처리 -->
+
+    </form>
+
+    <h2>upload</h2>
+    <form action="http:localhost/upload.php" method="post" enctype="multipart/form-data"></form>
+        <input type="text" name="id">
+        <input type="file" name="profile">
+        <input type="submit">
+
+</body>
+</html>
