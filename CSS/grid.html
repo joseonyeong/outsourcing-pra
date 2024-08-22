@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            border: 5px solid pink;
+            display:grid;
+            grid-template-columns: 150px 1fr;
+            /*
+                grid는 공간을 만들어주고
+                inline은 콘텐츠 크기만큼만 줌
+            */
+            /*
+                grid-template-rows(grid-template-columns)
+                
+                첫번째 컬럼은 150px 사이즈를 가지고 1열을 다 쓴다.
+            */
+        }
+        p   {
+            border: 5px solid grey;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p>navigation</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </nav>
+</body>
+</html>
